@@ -1,48 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Audio Delay - Firefox Extension</title>
-    <meta charset="utf-8">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            line-height: 1.6;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .install-btn {
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            margin: 40px auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #4a5568;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        
+        .install-button {
             display: inline-block;
-            background: #0060df;
+            background: #0053ba;
             color: white;
             padding: 15px 30px;
-            border-radius: 4px;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            margin: 20px 0;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            border: 2px solid #0053ba;
         }
-        .install-btn:hover {
-            background: #003eaa;
+        
+        .install-button:hover {
+            background: white;
+            color: #0053ba;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .feature {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        
+        .screenshot {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .screenshot img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #718096;
         }
     </style>
 </head>
 <body>
-    <h1>YouTube Audio Delay</h1>
-    <p>Firefox расширение для настройки задержки звука на YouTube</p>
-    
-    <a href="https://addons.mozilla.org/firefox/addon/ВАШ-ID/" 
-       class="install-btn" target="_blank">
-        Установить из Firefox Add-ons
-    </a>
-    
-    <h2>Возможности</h2>
-    <ul>
-        <li>Точная настройка задержки звука</li>
-        <li>Простой интерфейс</li>
-        <li>Бесплатно и с открытым исходным кодом</li>
-    </ul>
-    
-    <h2>Поддержка</h2>
-    <p>Вопросы и предложения отправляйте через Firefox Add-ons Store</p>
+    <div class="container">
+        <header>
+            <h1>YouTube Audio Delay</h1>
+            <p class="subtitle">Firefox Extension - Настройте задержку звука для видео на YouTube</p>
+            
+            <a href="https://addons.mozilla.org/firefox/addon/ВАШЕ-РАСШИРЕНИЕ/" 
+               class="install-button" target="_blank">
+                ⬇ Установить из Firefox Add-ons
+            </a>
+        </header>
+        
+        <section class="screenshot">
+            <!-- Замените на реальный скриншот -->
+            <img src="https://via.placeholder.com/600x400/667eea/ffffff?text=Скриншот+расширения" 
+                 alt="Скриншот расширения YouTube Audio Delay">
+        </section>
+        
+        <section class="features">
+            <div class="feature">
+                <h3>🎵 Точная настройка</h3>
+                <p>Устанавливайте задержку звука с точностью до миллисекунды</p>
+            </div>
+            
+            <div class="feature">
+                <h3>💾 Сохранение настроек</h3>
+                <p>Настройки сохраняются для каждого сайта отдельно</p>
+            </div>
+            
+            <div class="feature">
+                <h3>🚀 Простота использования</h3>
+                <p>Интуитивно понятный интерфейс в popup-окне</p>
+            </div>
+            
+            <div class="feature">
+                <h3>🔧 Для любых видео</h3>
+                <p>Работает со всеми видео на YouTube</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Как использовать</h2>
+            <ol style="margin: 20px 0 20px 20px;">
+                <li>Установите расширение из Firefox Add-ons Store</li>
+                <li>Откройте любое видео на YouTube</li>
+                <li>Нажмите на иконку расширения в панели браузера</li>
+                <li>Установите нужную задержку звука</li>
+                <li>Нажмите "Применить"</li>
+            </ol>
+        </section>
+        
+        <section>
+            <h2>Поддержка</h2>
+            <p>Если у вас есть вопросы или предложения:</p>
+            <ul style="margin: 20px 0 20px 20px;">
+                <li>Напишите в <a href="mailto:ваш@email.com">поддержку</a></li>
+                <li>Сообщите о проблеме на странице расширения в Firefox Add-ons</li>
+            </ul>
+        </section>
+        
+        <footer>
+            <p>YouTube Audio Delay - бесплатное расширение для Firefox</p>
+            <p>© 2024. Все права защищены.</p>
+        </footer>
+    </div>
 </body>
 </html>
