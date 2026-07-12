@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Audio Delay - Firefox Extension</title>
+    <title>YouTube Audio Delay Pro - Firefox Extension</title>
     <style>
         * {
             margin: 0;
@@ -46,6 +46,17 @@
             font-size: 1.2em;
             margin-bottom: 30px;
         }
+
+        .version-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
         
         .install-button {
             display: inline-block;
@@ -86,15 +97,16 @@
             margin-bottom: 10px;
         }
         
-        .screenshot {
-            text-align: center;
-            margin: 40px 0;
-        }
-        
-        .screenshot img {
-            max-width: 100%;
+        .feature .new-badge {
+            display: inline-block;
+            background: #48bb78;
+            color: white;
+            font-size: 0.6em;
+            padding: 1px 8px;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-left: 6px;
+            vertical-align: middle;
+            font-weight: bold;
         }
         
         footer {
@@ -104,13 +116,27 @@
             border-top: 1px solid #e2e8f0;
             color: #718096;
         }
+
+        .support-section {
+            margin-top: 30px;
+        }
+        .support-section ul {
+            margin: 15px 0 0 20px;
+        }
+
+        .how-to-use ol {
+            margin: 15px 0 0 20px;
+        }
+        .how-to-use ol li {
+            margin-bottom: 6px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>YouTube Audio Delay</h1>
-            <p class="subtitle">Firefox Extension - Adjust audio delay for YouTube videos</p>
+            <h1>YouTube Audio Delay Pro <span class="version-badge">v2.4</span></h1>
+            <p class="subtitle">Firefox Extension – Adjust audio delay for YouTube videos with precision</p>
             
             <a href="https://addons.mozilla.org/en-US/firefox/addon/youtube-audio-delay-pro/" 
                class="install-button" target="_blank">
@@ -120,45 +146,45 @@
       
         <section class="features">
             <div class="feature">
-                <h3>🎵 Precise Adjustment</h3>
-                <p>Set audio delay with millisecond precision</p>
+                <h3>🎵 Precise Adjustment <span class="new-badge">NEW</span></h3>
+                <p>Set audio delay with millisecond precision. Maximum delay is now <strong>60,000 ms (60 seconds)</strong> for videos with severe audio desync.</p>
             </div>
             
             <div class="feature">
-                <h3>🚀 Easy to Use</h3>
-                <p>Intuitive and user-friendly interface</p>
+                <h3>🚀 Two Panel Types</h3>
+                <p>Choose between <strong>Floating</strong> panel (inside video) or <strong>Inline</strong> panel (under video).</p>
             </div>
             
             <div class="feature">
-                <h3>🔧 Works with All Videos</h3>
-                <p>Compatible with all YouTube videos</p>
+                <h3>🎨 Adaptive Theme <span class="new-badge">NEW</span></h3>
+                <p>Inline panel supports <strong>Auto</strong> (follows YouTube), <strong>Light</strong>, or <strong>Dark</strong> themes. Options popup follows your Windows system theme.</p>
             </div>
         </section>
         
-        <section>
+        <section class="how-to-use">
             <h2>How to Use</h2>
-            <ol style="margin: 20px 0 20px 20px;">
-                <li>Install the extension from Firefox Add-ons Store</li>
+            <ol>
+                <li>Install the extension from the Firefox Add-ons Store</li>
                 <li>Open any YouTube video</li>
-                <li>Click "Off" to switch to "On"</li>
-                <li>Set the audio delay using the buttons +/-500 +/-100</li>
-                <li>Press Reset to set to 0</li>
-                <li>Click the add-on icon in the toolbar to open the settings. In the settings you can change the panel's appearance and set the default audio delay</li>
-
+                <li>Click the <strong>"OFF"</strong> button to switch to <strong>"ON"</strong></li>
+                <li>Adjust the delay using the <strong>+/-500</strong> and <strong>+/-100</strong> buttons</li>
+                <li>Click on the delay value (e.g., "0ms") to type a custom delay directly</li>
+                <li>Press <strong>"Reset"</strong> to set the delay back to 0</li>
+                <li>Click the add-on icon in the Firefox toolbar to open <strong>Settings</strong>, where you can change panel type, theme, and default delay</li>
             </ol>
         </section>
         
-        <section>
+        <section class="support-section">
             <h2>Support</h2>
             <p>If you have questions or suggestions:</p>
-            <ul style="margin: 20px 0 20px 20px;">
-                <li>Leave feedback on the Firefox Add-ons page</li>
+            <ul>
+                <li>Leave feedback on the <a href="https://addons.mozilla.org/en-US/firefox/addon/youtube-audio-delay-pro/" target="_blank">Firefox Add-ons page</a></li>
                 <li>Report any issues you encounter</li>
             </ul>
         </section>
         
         <footer>
-            <p>YouTube Audio Delay - Free Firefox Extension</p>
+            <p>YouTube Audio Delay Pro – Free Firefox Extension</p>
             <p>© 2025. All rights reserved.</p>
         </footer>
     </div>
